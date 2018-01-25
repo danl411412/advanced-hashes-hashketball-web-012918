@@ -194,7 +194,7 @@ def player_stats(player)
       if location_team_stats == :player
         specific_stats.collect do |team_player, player_stats|
           if team_player == player
-  
+
           end
         end
       end
