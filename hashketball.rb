@@ -193,8 +193,8 @@ def player_stats(player)
     team_stats.each do |location_team_stats, specific_stats|
 
       if location_team_stats == :players
-        byebug
         specific_stats.collect do |team_player, player_stats|
+          byebug
           if team_player == player
 
           end
