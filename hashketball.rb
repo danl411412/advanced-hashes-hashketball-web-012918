@@ -1,4 +1,5 @@
 require "pry"
+require "byebug"
 
 def game_hash
   {
@@ -188,7 +189,7 @@ end
 
 def player_stats(player)
   game_hash.each do |team_location, team_stats|
-    binding.pry
+    byebug
     team_stats.each do |location_team_stats, specific_stats|
       if location_team_stats == :player
         specific_stats.collect do |team_player, player_stats|
