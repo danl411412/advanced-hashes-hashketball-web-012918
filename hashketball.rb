@@ -139,7 +139,7 @@ def shoe_size(player)
       if location_team_stats == :players
         specific_stats.each do |team_player, player_stats|
           if team_player == player
-            return player_stats[:shoes]
+            return player_stats[:shoe]
           end
         end
       end
