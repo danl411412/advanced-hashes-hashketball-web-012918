@@ -188,6 +188,7 @@ def player_numbers(team)
 end
 
 def player_stats(player)
+  answer = nil
   game_hash.each do |team_location, team_stats|
 
     team_stats.each do |location_team_stats, specific_stats|
@@ -196,12 +197,13 @@ def player_stats(player)
         specific_stats.collect do |team_player, player_stats|
           #byebug
           if team_player == player
-            player_stats
+            answer = player_stats
           end
         end
       end
     end
   end
+  answer
 end
 
 player_stats("Reggie Evans")
